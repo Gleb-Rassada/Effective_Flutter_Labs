@@ -16,10 +16,12 @@ class MenuPosition extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 140.0,
+      width: 100.0,
       height: 180.0,
-      margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
+      padding: EdgeInsets.fromLTRB(0, 10, 0, 0),
+      margin: EdgeInsets.fromLTRB(8, 0, 16, 0),
       decoration: BoxDecoration(
+        color: Color.fromARGB(255, 120, 180, 138),
         border: Border.all(),
         borderRadius: BorderRadius.all(
           Radius.circular(20),
@@ -30,7 +32,7 @@ class MenuPosition extends StatelessWidget {
         children: [
           Image.asset(
             imagePath,
-            width: 80.0,
+            width: 140.0,
             height: 100.0,
             fit: BoxFit.contain,
           ),
@@ -46,12 +48,12 @@ class MenuPosition extends StatelessWidget {
           Container(
             decoration: BoxDecoration(
               border: Border.all(
-                color: Color.fromARGB(255, 133, 195, 222),
+                color: Color.fromARGB(70, 0, 0, 0),
               ),
-              color: Color.fromARGB(255, 133, 195, 222),
               borderRadius: BorderRadius.all(
                 Radius.circular(20),
               ),
+              color: Color.fromARGB(70, 0, 0, 0),
             ),
             margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
             padding: EdgeInsets.fromLTRB(6, 2, 6, 2),
